@@ -2,31 +2,95 @@
 <html>
 <head>
 	<title>..::	iPets ::..</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/galeria.css">
 </head>
-<body>
-	<div id="div-topo">
-		<img id="topo-logo" src="">
-		<div class="div-menu">
-		<ol>
+<body>	
+	<!-- menu social concluido -->
+<div style="overflow: auto;">
+<div class="rd-sociais">
+		<div class="div-right">
+	<a href="http://facebook.com.br" target="_blank"><img src="imagens/icon-rd/facebook.jpeg" alt="logo do Facebook"></a>
+    <a href="http://instagram.com.br" target="_blank"><img src="imagens/icon-rd/instagram.jpeg" alt="logo do instagram"></a>
+    <a href="http://youtube.com.br" target="_blank"><img src="imagens/icon-rd/youtube.jpeg" alt="logo do Youtube"></a>
+    <a href="http://twitter.com.br" target="_blank"><img src="imagens/icon-rd/twitter.jpeg" alt="logo do Twitter"></a>
+		</div>
+</div>
+</div>
+<div id="div-topo">
+		<img id="logo-topo" src="imagens/logo/minha_logo_purple.png">
+	</div>
+	<div class="div-menu">
+		
+		<ul>
 			<li><a href="index.html">HOME</a></li>
+			<li><a href="vendas.html">VENDAS</a></li>
+			<li><a href="histvendas.html">HISTORICO DE VENDAS</a></li>
 			<li><a href="controle.html">ESTOQUE</a></li>
 			<li><a href="produtos.html">PRODUTOS</a></li>
-			<li><a href="funcionarios.html">FUNCIONARIOS</a></li>
-		</ol>
+			<li><a href="funcionarios.html">FUNCIONARIOS</a></li>			
+			<img src="imagens/icon-rd/ic_pesquisa_white.png">
+			<input type="text" placeholder="Busca.." size="40">
+		</ul>
+		</div>	
+</div>
+
+<div class="container">
+
+	<input type="radio" name="images" id="i1" checked>
+	<input type="radio" name="images" id="i2">
+	<input type="radio" name="images" id="i3">
+	<input type="radio" name="images" id="i4">
+	<input type="radio" name="images" id="i5">
+
+	<div class="slide_img" id="one">
+		<img src="imagens/img-carrossel/foto1.jpeg">
+
+		<label for="i5" class="pre"></label>
+		<label for="i2" class="nxt"></label>
+
 	</div>
-	<div class="login-container">
-		<form id="form-topo">
-			<input type="text" placeholder="Username" name="username">
-      		<input type="text" placeholder="Password" name="psw">
-     		<button type="submit">Login</button>
-			<input type="text" placeholder="Busca" name="busca">
-			<button type="submit" ><img src="imagens/ic_pesquisa_white.png"></button>
-		</form>
+		<div class="slide_img" id="two">
+		<img src="imagens/img-carrossel/foto2.jpeg">
+
+		<label for="i1" class="pre"></label>
+		<label for="i3" class="nxt"></label>
+
 	</div>
-	
+		<div class="slide_img" id="three">
+		<img src="imagens/img-carrossel/foto3.jpeg">
+
+		<label for="i2" class="pre"></label>
+		<label for="i4" class="nxt"></label>
+
 	</div>
-	<div class="container">
+		<div class="slide_img" id="four">
+		<img src="imagens/img-carrossel/foto4.jpeg">
+
+		<label for="i3" class="pre"></label>
+		<label for="i5" class="nxt"></label>
+
+	</div>
+		<div class="slide_img" id="five">
+		<img src="imagens/img-carrossel/foto5.jpeg">
+
+		<label for="i4" class="pre"></label>
+		<label for="i1" class="nxt"></label>
+
+	</div>
+
+	<div class="nav">
+		<label class="dots" id="dot1" for="i1"></label>
+		<label class="dots" id="dot1" for="i2"></label>
+		<label class="dots" id="dot1" for="i3"></label>
+		<label class="dots" id="dot1" for="i4"></label>
+		<label class="dots" id="dot1" for="i5"></label>
+
+	</div>
+	dasdada
+</div>
+
 <h2>iPets</h2>
 <p>Para todos os amantes e apaixanados por esses serezinhos tão especiais, Sejam Bem vindos!</p>
 </div>

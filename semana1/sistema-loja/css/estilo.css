@@ -1,25 +1,85 @@
 * {
+	box-sizing: border-box;
 	margin:0px;
 	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*	width:100%;
+	height: auto;
+	background-color: #000;
+	text-align: center;
+}
+
+*/
+
+/* Menu Social */
+.rd-sociais {	
+	width: 100%;			
+	background-color: #f7f7f7;
+		
+}
+
+.div-right {
+	float: right;	
+	padding: 3px;
+	margin-right: 5px;
+}
+/* Término do Menu Social */
+
+/* Menu de Navegação */
+
+.div-menu {
+	display: block;
+
+
+}
+
+.div-menu img {
+	float: right;
+	margin-right: 10px
+	padding-bottom5px;
+}
+
+.div-menu input[type=text] {
+  float: right;
+  padding-bottom: 8px;  
+  margin-right: 20px;  
+  border: none;
+  font-size: 17px;
+}
+.div-menu ul {
+	list-style-type: none;
+	margin:0;	
+	overflow: hidden;
+	background-color: #000;
+	padding-top:200px;
+	padding-bottom: 5px;
+
+	
+}
+
+.div-menu li {
+	float: left;	
+	}
+
+.div-menu li a {
+	display: inline;
+	color: white;	
+	padding: 14px 16px;
+	text-decoration: none;
+
+}
+
+.div-menu li a:hover {
+	background-color: #7b0baf;
 }
 
 #div-topo {
-	overflow: hidden;
-	background-color: #000000;
+	position: absolute;
+	top: -3%;
 
-}
-
-#topo-logo {
-	display: inline;
-}
-
-.div-menu ol {
-	display: inline;
-	list-style-type: none;
-	margin: 0;
-	padding-bottom: 10px;
-}
-	
-.div-menu li {
-	display: inline;
+	right: 45%;
+	width: 250px;
+	height: 250px;
 }
