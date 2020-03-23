@@ -35,6 +35,15 @@ img {
 
 
 */
+
+table button:hover {
+     background-color: #f9cf0d;
+}
+
+table button:visited {
+  color:white;
+}
+
 .botao-amarelo {
     background-color: #ffaf43;
     width: 250px;
