@@ -127,3 +127,54 @@ let valorDesconto = valorTotal * 0.15
 
 console.log("O valor total da conta de luz com desconto de 15% é de : R$ " + (valorTotal - valorDesconto) + " Reais")
 
+//___________________DESAFIOS__________________
+
+// A - LIBRA PARA KG
+
+let lib = 20
+let quiGrama = (lib) / 2.205
+
+console.log("20 Libras equivalem a " + quiGrama + " Kg")
+
+// B - ONÇA PARA KG
+
+let onc = 10.5
+let quiCon = (lib) / 35.274
+
+console.log("10.5 oz equivalem a " + quiCon + " Kg")
+
+// C - MILHAS PARA METROS
+
+let vMil = 100
+let vMe = (vMil) * 1609
+
+console.log("100 milhas equivalem a " + vMe + " m")
+
+// D- PÉS PARA METRO
+
+
+let vFt = 50
+let vMet = (vFt) / 3.281
+
+console.log("50 pés equivalem a " + vMet + " m")
+
+//E- GALÕES AMERICANOS PARA LITROS
+
+let vGal = 103.56
+let vLi = (vGal) * 3.806
+
+console.log("103.56 Galões Americanos equivalem a " + vLi + " Litros")
+
+//F- XICARA IMPERIAL PARA LITROS
+
+let vXic = 450
+let vLit = (vXic) / 3.52
+
+console.log("450 Xícaras Imperial equivalem a " + vLit + " Litros")
+
+//G - LIBRAS PARA QUILOGRAMA DIGITADA PELO USUARIO NO PROMPT
+let vlib = prompt("Informe o valor desejado para converter de Libras para Kg: ")
+let vGrama = (vlib) / 2.205
+
+console.log(vlib + " Libras sendo convertidas para Kg dá: " + vGrama + " Kg")
+
