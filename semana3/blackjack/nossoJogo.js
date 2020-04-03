@@ -1,32 +1,20 @@
-/**
- * EXEMPLO DE UTILIZAÇÃO DA 'comprarCarta'
- *
- *
-    const carta = comprarCarta(); // Sorteia uma carta. Por exemplo, o rei de ouros
+if (confirm("Deseja iniciar uma nova rodada?")) {
+   const primeiraCartaUsuario = comprarCarta()
+   const segundaCartaUsuario = comprarCarta()
+   const primeiraCartaComputador = comprarCarta()
+   const segundaCartaComputador = comprarCarta()
+   const usuarioSomaCartas = primeiraCartaUsuario.valor + segundaCartaUsuario.valor;
+   const computadorSomaCartas = primeiraCartaComputador.valor + segundaCartaComputador.valor;
 
-    console.log(carta.texto) // imprime o texto da carta. Exemplo: "K♦️" (indica "K" de ouros)
-    console.log(carta.valor) // imprime o valor da carta (um número). Exemplo: 10 (dado que "K" vale 10)
- *
- *
- *
- */
-
-let jogadores = new Array();
-let jogadorAtual = 0;
-
-function iniciarJogo() {
-   let comecar = true
-   console.log("Bem vindo ao jogo de Blackjack! ou se preferir 21")
-
-   if (confirm("Deseja iniciar uma nova rodada?")) {
-
-   }
-}
-
-function criarJogador(num) {
-   jogador = new Array();
-   for (let i = 1; i <= num; i++) {
-      let hand = new Array();
-      let jogador = { Name: 'Jogador' + i, ID: i, Points: 0, Hand: hand }
+   console.log("Suas cartas são: ", primeiraCartaUsuario.texto, segundaCartaUsuario.texto, "Sua pontuação atual é: ", usuarioSomaCartas),
+      console.log("As cartas do computador são: ", primeiraCartaComputador.texto, segundaCartaComputador.texto, "A pontuação do computador é: ", computadorSomaCartas)
+   if (computadorSomaCartas === usuarioSomaCartas) {
+      console.log("EMPATE!")
+   } else if (computadorSomaCartas > usuarioSomaCartas) {
+      console.log("O computador GANHOU!")
+   } else if (computadorSomaCartas < usuarioSomaCartas) {
+      console.log("O usuário GANHOU! PARABÉNS!!!")
+   } else {
+      console.log("O jogo Acabou!!!")
    }
 }
