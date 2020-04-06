@@ -102,12 +102,12 @@
 
 //______________________________Exercicio 4 _________________________________________________//
 //B -
-
+//
 const cadastro = () => {
   return {
     nome: 'Goli',
     idade: 23,
-    endereco: 'Rua da Future4' ,
-    estudante = prompt("Você é um estudante ?" )
+    endereco: 'Rua da Future4',
+    estudante = prompt("Você é um estudante ?")
   }
 }
