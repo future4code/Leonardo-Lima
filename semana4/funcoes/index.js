@@ -103,11 +103,21 @@
 //______________________________Exercicio 4 _________________________________________________//
 //B -
 //
-const cadastro = () => {
-  return {
-    nome: 'Goli',
-    idade: 23,
-    endereco: 'Rua da Future4',
-    estudante = prompt("Você é um estudante ?")
+
+function cadastro() {
+
+  const nome = prompt("Informe o seu nome: "),
+    idade = prompt("Informe a sua idade: "),
+    endereco = prompt("Informe o seu endereço: "),
+    estudante = confirm("Você é estudante?")
+  if (estudante === true) {
+    return "Eu sou " + nome + "," + " tenho " + idade + " anos" + "," + " moro em " + endereco + " e sou estudante."
+  } else {
+    return "Eu sou " + nome + "," + " tenho " + idade + " anos" + "," + " moro em " + endereco + " e não sou estudante."
   }
 }
+
+const resultado = cadastro()
+console.log(resultado)
+
+
