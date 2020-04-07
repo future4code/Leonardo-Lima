@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**
+*******************************
+CONFIGURANDO O HEADER
+*******************************
+**/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  font-size: 1.3rem;
+}
+
+header input, select, button {
+  margin: 4px;
+  font-size: 1rem;
+}
+
+input {
+  width: 300px;
+  border-style: none;
+  border-bottom: 1px solid #999999;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+/**
+*******************************
+FIM DO HEADER
+*******************************
+INICIO DO CONTEUDO
+*******************************
+**/
+
+section {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.semana {
+  border-right: 1px solid #000;
+  width: 100%;
+}
+
+.dias-grid {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  width: 90%;
+  height: 90%;
+}
+
+.dias-grid div, li {
+  border: 1px solid #999;
+  width: 90%;
+}
+
+footer {
+  bottom: 0;
+  border: 2px solid;
+  position: fixed;
+  width: 100%;
+}

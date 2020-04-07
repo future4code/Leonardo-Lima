@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js" defer></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <title>Planner</title>
+  </head>
+  <body>
+<header>
+<p> Cadastrar nova Tarefa: </p>
+<input type="text" placeholder="Exemplo: Reunião" id="input-texto">
+<select name="diaSemana" id="diaSemana">
+  <option value="Segunda-feira">Segunda-feira</option>
+  <option value="Terça-feira">Terça-feira</option>
+  <option value="Quarta-feira">Quarta-feira</option>
+  <option value="Quinta-feira">Quinta-feira</option>
+  <option value="Sexta-feira">Sexta-feira</option>
+  <option value="Sábado">Sábado</option>
+  <option value="Domingo">Domingo</option>
+</select>
+<button onclick="cadastrarTarefa()">Cadastrar Tarefa</button>
+</header>
+
+<section>
+<article class="semana" id="segunda">
+  <div class="dias-grid">
+<h3>Segunda-Feira</h3>
+</div>
+<div class="lista-dia-grid">
+<ul id="lista-dia-tarefas">
+</ul>
+</div>
+</article>
+<article class="semana" id="segunda">
+<h3>Terça-Feira</h3>
+</article>
+<article class="semana" id="segunda">
+<h3>Quarta-Feira</h3>
+</article>
+<article class="semana" id="segunda">
+<h3>Quinta-Feira</h3>
+</article>
+<article class="semana" id="segunda">
+<h3>Sexta-Feira</h3>
+</article>
+<article class="semana" id="segunda">
+<h3>Sábado</h3>
+</article>
+<article class="semana" id="segunda">
+<h3>Domingo</h3>
+</article>
+</section>
+
+<footer>
+footer
+</footer>
+  </body>
+
+
+</html>
