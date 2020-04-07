@@ -104,20 +104,91 @@
 //B -
 //
 
-function cadastro() {
+// function cadastro() {
 
-  const nome = prompt("Informe o seu nome: "),
-    idade = prompt("Informe a sua idade: "),
-    endereco = prompt("Informe o seu endereço: "),
-    estudante = confirm("Você é estudante?")
-  if (estudante === true) {
-    return "Eu sou " + nome + "," + " tenho " + idade + " anos" + "," + " moro em " + endereco + " e sou estudante."
-  } else {
-    return "Eu sou " + nome + "," + " tenho " + idade + " anos" + "," + " moro em " + endereco + " e não sou estudante."
-  }
-}
+//   const nome = prompt("Informe o seu nome: "),
+//     idade = prompt("Informe a sua idade: "),
+//     endereco = prompt("Informe o seu endereço: "),
+//     estudante = confirm("Você é estudante?")
+//   if (estudante === true) {
+//     return "Eu sou " + nome + "," + " tenho " + idade + " anos" + "," + " moro em " + endereco + " e sou estudante."
+//   } else {
+//     return "Eu sou " + nome + "," + " tenho " + idade + " anos" + "," + " moro em " + endereco + " e não sou estudante."
+//   }
+// }
 
-const resultado = cadastro()
-console.log(resultado)
+// const resultado = cadastro()
+// console.log(resultado)
+
+//______________________________Exercicio 5 _________________________________________________//
+
+// function seculosNumerosRomanos() {
+//   const numero = prompt("Informe um ANO para  saber em qual século ele está incluso: ")
+//   const romanos = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV']
+
+
+
+//   if (numero <= 100) {
+
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[1])
+//   } else if (numero >= 101 && numero <= 200) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[2])
+//   } else if (numero >= 201 && numero <= 300) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[3])
+//   } else if (numero >= 301 && numero <= 400) {
+//     console.log("O ano " + numero + "  dc,pertence ao século :" + romanos[4])
+//   } else if (numero >= 401 && numero <= 500) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[5])
+//   } else if (numero >= 501 && numero <= 600) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[6])
+//   } else if (numero >= 601 && numero <= 700) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[7])
+//   } else if (numero >= 701 && numero <= 800) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[8])
+//   } else if (numero >= 801 && numero <= 900) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[9])
+//   } else if (numero >= 901 && numero <= 1000) {
+//     console.log("O ano " + numero + "  dc,pertence ao século :" + romanos[10])
+//   } else if (numero >= 1001 && numero <= 1100) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[11])
+//   } else if (numero >= 1101 && numero <= 1200) {
+//     console.log("O ano " + numero + "  dc,pertence ao século :" + romanos[12])
+//   } else if (numero >= 1201 && numero <= 1300) {
+//     console.log("O ano " + numero + "  dc,pertence ao século :" + romanos[13])
+//   } else if (numero >= 1301 && numero <= 1400) {
+//     console.log("O ano " + numero + "  dc,pertence ao século :" + romanos[14])
+//   } else if (numero >= 1401 && numero <= 1500) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[15])
+//   } else if (numero >= 1501 && numero <= 1600) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[16])
+//   } else if (numero >= 1601 && numero <= 1700) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[17])
+//   } else if (numero >= 1701 && numero <= 1800) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[18])
+//   } else if (numero >= 1801 && numero <= 1900) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[19])
+//   } else if (numero >= 1901 && numero <= 2000) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[20])
+//   } else if (numero >= 2001 && numero <= 2100) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[21])
+//   } else if (numero >= 2101 && numero <= 2200) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[22])
+//   } else if (numero >= 2201 && numero <= 2300) {
+//     console.log("O ano " + numero + " dc, pertence ao século :" + romanos[23])
+
+//   } else {
+//     console.log("O número digitado não é válido. ")
+//   }
+
+// }
+// seculosNumerosRomanos()
+
+
+
+//______________________________Exercicio 6 _________________________________________________//
+
+
+const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+
 
 
