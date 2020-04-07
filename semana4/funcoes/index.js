@@ -186,9 +186,55 @@
 
 
 //______________________________Exercicio 6 _________________________________________________//
+//A -
+// function arrayList() {
+//   const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+//   console.log(array.length)
+// }
+
+// arrayList()
+
+//B -
+
+// let verificaParidade = (numero) => {
+//   if (numero % 2 === 0) {
+//     return "É par"
+//   } else
+//     return "É impar"
+// }
+
+// const resultado = verificaParidade(prompt("Informe um número : "))
+// console.log(resultado)
+
+//C -
+// function arrayList() {
+//   const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+//   const newArray = []
+
+//   for (let item of array) {
+//     if (item % 2 === 0) {
+//       newArray.push(item)
+//     }
+//   }
+//   console.log(newArray.length)
+
+// }
+// arrayList()
 
 
-const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
 
 
+//D-
+// function arrayList() {
+//   const array = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+//   const newArray = []
 
+//   for (let item of array) {
+//     if (item % 2 === 0) {
+//       newArray.push(item)
+//     }
+//   }
+//   console.log(newArray)
+
+// }
+// arrayList()
