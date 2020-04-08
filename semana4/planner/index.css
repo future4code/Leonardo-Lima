@@ -11,6 +11,8 @@ CONFIGURANDO O HEADER
 **/
 
 header {
+  background-color: #5c98fc;
+  color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,10 +29,37 @@ header input, select, button {
 
 input {
   width: 300px;
+  font-size: 16px;
+  margin: 4px 2px;
   border-style: none;
   border-bottom: 1px solid #999999;
   box-shadow: 0 0 0 0;
   outline: 0;
+  padding: 10px 22px;
+}
+
+select {
+  font-size: 16px;
+  padding: 10px 22px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #0043b3;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0043b3;
+  color: white;
 }
 
 /**
@@ -42,34 +71,41 @@ INICIO DO CONTEUDO
 **/
 
 section {
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.titulo {
+  margin-left: 30px;
 }
 
 .semana {
-  border-right: 1px solid #000;
-  width: 100%;
-}
-
-.dias-grid {
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  width: 90%;
-  height: 90%;
-}
-
-.dias-grid div, li {
+  background-color: #5c98fc;
+  color: whitesmoke;
+  width: 250px;
+  height: 400px;
+  font-size: 1.2em;
+  border-radius: 10px;
   border: 1px solid #999;
-  width: 90%;
+  box-shadow: 10px 10px 5px grey;
 }
 
-footer {
-  bottom: 0;
-  border: 2px solid;
-  position: fixed;
+h3 {
+  text-align: center;
+}
+
+ul {
+  margin-top: 10px;
   width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
 }
