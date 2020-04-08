@@ -10,6 +10,10 @@ function cadastrarTarefa() {
   const tarefaSabado = document.getElementById("sabado")
   const tarefaDomingo = document.getElementById("domingo")
 
+  if (tarefa.value === "" || tarefa.value >= 0 || tarefa.value <= 0) {
+    alert("Necessário informar um nome para Tarefa  e/ou a Tarefa não pode ter apenas números")
+    return tarefa.value = ""
+  }
   if (escolhaDiaDaSemana === "segunda") {
     tarefaSegunda.innerHTML += "<li>" + tarefa.value + "</li>"
 
@@ -32,9 +36,7 @@ function cadastrarTarefa() {
     tarefaDomingo.innerHTML += "<li>" + tarefa.value + "</li>"
 
   }
-
+  tarefa.value = ""
 }
 
-function limpar() {
-  document.getElementById("input-texto").value = ""
-}
+

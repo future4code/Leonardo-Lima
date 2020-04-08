@@ -94,6 +94,11 @@ section {
   box-shadow: 10px 10px 5px grey;
 }
 
+article li:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
 h3 {
   text-align: center;
 }
