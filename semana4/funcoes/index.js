@@ -71,6 +71,7 @@
 //______________________________Exercicio 3 _________________________________________________//
 
 // function somarMultiplicar(array) {
+  // const array = [1,2,3,4,5]
 //   let resultadoA = 0;
 //   let resultadoB = 1;
 //   let arrayFinal = [];
