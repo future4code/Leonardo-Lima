@@ -96,7 +96,6 @@ section {
 
 article li:hover {
   cursor: pointer;
-  text-decoration: line-through;
 }
 
 h3 {
@@ -112,5 +111,6 @@ ul {
 
 li {
   list-style-type: none;
-  text-align: center;
+  text-align: left;
+  margin-left: 10px;
 }
