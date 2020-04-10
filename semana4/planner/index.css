@@ -112,5 +112,26 @@ ul {
 
 li {
   list-style-type: none;
-  text-align: center;
+  text-align: left;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  button {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+
+
+select {
+  width: 100%;
+}
+
 }

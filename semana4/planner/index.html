@@ -11,8 +11,8 @@
   <body>
 <header>
     <p> Cadastrar nova Tarefa: </p>
-        <input type="text" placeholder="Exemplo: Reunião" id="input-texto">
-              <select name="diaSemana" id="diaDaSemana">
+        <input type="text" placeholder="Exemplo: Reunião" id="input-texto"  onkeydown="apertouEnter(event)">
+              <select id="dia-semana" onchange="diaSemana(event)"  onkeydown="apertouEnter(event)">
                         <option value="segunda">Segunda-feira</option>
                         <option value="terca">Terça-feira</option>
                         <option value="quarta">Quarta-feira</option>
@@ -21,7 +21,35 @@
                         <option value="sabado">Sábado</option>
                         <option value="domingo">Domingo</option>
                 </select>
-          <button onclick="cadastrarTarefa()">Cadastrar Tarefa</button>
+                <select  id="hora-dia" onchange="horaDoDia(event)"  onkeydown="apertouEnter(event)">
+                        <option value="00">00:00 hrs.</option>
+                        <option value="01">01:00 hrs.</option>
+                        <option value="02">02:00 hrs.</option>
+                        <option value="03">03:00 hrs.</option>
+                        <option value="04">04:00 hrs.</option>
+                        <option value="05">05:00 hrs.</option>
+                        <option value="06">06:00 hrs.</option>
+                        <option value="07">07:00 hrs.</option>
+                        <option value="08">08:00 hrs.</option>
+                        <option value="09">09:00 hrs.</option>
+                        <option value="10">10:00 hrs.</option>
+                        <option value="11">11:00 hrs.</option>
+                        <option value="12">12:00 hrs.</option>
+                        <option value="13">13:00 hrs.</option>
+                        <option value="14">14:00 hrs.</option>
+                        <option value="15">15:00 hrs.</option>
+                        <option value="16">16:00 hrs.</option>
+                        <option value="17">17:00 hrs.</option>
+                        <option value="18">18:00 hrs.</option>
+                        <option value="19">19:00 hrs.</option>
+                        <option value="20">20:00 hrs.</option>
+                        <option value="21">21:00 hrs.</option>
+                        <option value="22">22:00 hrs.</option>
+                        <option value="23">23:00 hrs.</option>
+
+                </select>
+          <button onclick="cadastrarTarefa()"  onkeydown="apertouEnter(event)">Cadastrar Tarefa</button>
+          <button onclick="deletarTarefa()">Deletar Tarefa</button>
 </header>
 <main>
           <div class="titulo"><h1>Minha Semana</h1></div>
