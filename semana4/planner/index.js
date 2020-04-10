@@ -38,26 +38,13 @@ function apertouEnter(evento) {
 }
 
 function deletarTarefa() {
-  let semana = Array.from(document.getElementById("dia-semana"))
-  let recebeSemana = semana.value
-  let recebeDias = ""
-  let diaSemana = []
-  diaSemana.push(recebeDias)
-  console.log(semana)
-  console.log(recebeSemana)
 
-
-  //for (let i = 0; i < 6; i++) {
-  // i = document.getElementById(diaSemana()).innerHTML = ""
-
-
-  // let tarefaSegunda = document.getElementById("segunda").innerHTML = ""
-  // let tarefaTerca = document.getElementById("terca").innerHTML = ""
-  // let tarefaQuarta = document.getElementById("quarta").innerHTML = ""
-  // let tarefaQuinta = document.getElementById("quinta").innerHTML = ""
-  // let tarefaSexta = document.getElementById("sexta").innerHTML = ""
-  // let tarefaSabado = document.getElementById("sabado").innerHTML = ""
-  // let tarefaDomingo = document.getElementById("domingo").innerHTML = ""
+  let tarefaSegunda = document.getElementById("segunda").innerHTML = ""
+  let tarefaTerca = document.getElementById("terca").innerHTML = ""
+  let tarefaQuarta = document.getElementById("quarta").innerHTML = ""
+  let tarefaQuinta = document.getElementById("quinta").innerHTML = ""
+  let tarefaSexta = document.getElementById("sexta").innerHTML = ""
+  let tarefaSabado = document.getElementById("sabado").innerHTML = ""
+  let tarefaDomingo = document.getElementById("domingo").innerHTML = ""
 
 }
-

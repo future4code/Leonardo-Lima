@@ -12,7 +12,7 @@
 <header>
     <p> Cadastrar nova Tarefa: </p>
         <input type="text" placeholder="Exemplo: Reunião" id="input-texto"  onkeydown="apertouEnter(event)">
-              <select id="dia-semana" onchange="diaSemana(event)">
+              <select id="dia-semana" onchange="diaSemana(event)"  onkeydown="apertouEnter(event)">
                         <option value="segunda">Segunda-feira</option>
                         <option value="terca">Terça-feira</option>
                         <option value="quarta">Quarta-feira</option>
@@ -21,7 +21,7 @@
                         <option value="sabado">Sábado</option>
                         <option value="domingo">Domingo</option>
                 </select>
-                <select  id="hora-dia" onchange="horaDoDia(event)">
+                <select  id="hora-dia" onchange="horaDoDia(event)"  onkeydown="apertouEnter(event)">
                         <option value="00">00:00 hrs.</option>
                         <option value="01">01:00 hrs.</option>
                         <option value="02">02:00 hrs.</option>
@@ -48,7 +48,7 @@
                         <option value="23">23:00 hrs.</option>
 
                 </select>
-          <button onclick="cadastrarTarefa()">Cadastrar Tarefa</button>
+          <button onclick="cadastrarTarefa()"  onkeydown="apertouEnter(event)">Cadastrar Tarefa</button>
           <button onclick="deletarTarefa()">Deletar Tarefa</button>
 </header>
 <main>
