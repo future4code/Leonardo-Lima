@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "left center extrato" "left center extrato" ". center-detalhes extrato" ". center-detalhes extrato" ". center-detalhes extrato" ". center-detalhes extrato";
+}
+
+.left {
+  grid-area: left;
+}
+
+.center {
+  grid-area: center;
+}
+
+.center-detalhes {
+  grid-area: center-detalhes;
+}
+
+.extrato {
+  grid-area: extrato;
+}
