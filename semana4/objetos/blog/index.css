@@ -1,34 +1,44 @@
-#container {
-  justify-content: center;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid #999;
-  border-radius: 20px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 01fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.8fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". topo topo ." ". texto texto ." ". postagens postagens ." ". postagens postagens ." ". postagens postagens .";
 }
 
 .topo {
-  display: flex;
-  flex-direction: column;
+  margin-top: 0;
+  grid-area: topo;
+}
+
+.texto {
+  border-radius: 10px 10px 0 0;
+  grid-area: texto;
+  text-align: center;
+  margin-bottom: 2px;
+  background-color: #8fb4f3;
+}
+
+.postagens {
+  grid-area: postagens;
 }
 
 input {
-  width: 300px;
+  width: 79%;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px;
   border-style: none;
-  border-bottom: 1px solid #999999;
   box-shadow: 0 0 0 0;
   outline: 0;
-  padding: 10px 22px;
+  padding: 10px 2px;
 }
 
 button {
   width: 200px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
-  background-color: #5da5f1;
+  background-color: #0043b3;
   color: whitesmoke;
   border-radius: 30px;
   padding: 16px 32px;
@@ -41,18 +51,50 @@ button {
 }
 
 button:hover {
-  background-color: #0043b3;
+  background-color: #042b6b;
   color: white;
 }
 
 textarea {
   font-size: 16px;
+  margin: 4px;
   box-shadow: 0 0 0 0;
   outline: 0;
+  width: 79%;
+}
+
+/*
+FIM DAS CONFIGURACOES DO TOPO E DOS INPUT
+
+*/
+
+#publicacoes {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 5px;
+  color:#000;
+}
+
+#publicacoes p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+#publicacoes p:last-child {
+  text-align: right;
+  margin-right: 5px;
+
 }
 
 article {
-  border: 1px solid black;
-  text-align: center;
-  width: 500px;
+  background-color: #8fb4f3;
+  margin-top:5px;
+}
+
+article:first-child {
+  border-radius: 0px 0px 10px 10px;
 }
