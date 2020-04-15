@@ -96,7 +96,6 @@ section {
 
 article li:hover {
   cursor: pointer;
-  text-decoration: line-through;
 }
 
 h3 {
@@ -128,10 +127,3 @@ li {
   input {
     width: 100%;
   }
-
-
-select {
-  width: 100%;
-}
-
-}
