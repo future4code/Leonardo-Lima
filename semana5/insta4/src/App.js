@@ -10,7 +10,7 @@ class App extends React.Component {
         <Post
           nomeUsuario={"Leonardo"}
           fotoUsuario={fotoPerfil}
-          fotoPost={"https://picsum.photos/200/150?a2"}
+          fotoPost={"https://i1.wp.com/css-tricks.com/wp-content/uploads/2019/03/circle-of-react-lifecycle.png?ssl=1"}
         />
         <Post
           nomeUsuario={"Labenu_"}

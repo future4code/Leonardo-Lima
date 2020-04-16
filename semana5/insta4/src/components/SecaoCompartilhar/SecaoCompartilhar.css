@@ -1,0 +1,10 @@
+.share-container {
+  display: inline;
+  justify-content: center;
+  padding: 0px;
+}
+
+.input-share {
+  width: 98%;
+  margin-left: 1px;
+}
