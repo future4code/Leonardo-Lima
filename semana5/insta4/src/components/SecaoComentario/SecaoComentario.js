@@ -12,7 +12,7 @@ export class SecaoComentario extends Component {
 
 	}
 
-	
+
 
 	render() {
 		return <div className={'comment-container'}>

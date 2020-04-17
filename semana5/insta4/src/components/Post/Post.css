@@ -1,6 +1,6 @@
 .post-container {
     border: 1px solid gray;
-    width: 300px;
+    width: 400px;
     margin-bottom: 10px;
 }
 
@@ -22,8 +22,7 @@
 .user-logo {
     width: 30px;
     height: 30px;
-    margin: 2px;
-    border-radius: 5%;
+    margin: 5px;
     cursor: pointer;
 }
 
