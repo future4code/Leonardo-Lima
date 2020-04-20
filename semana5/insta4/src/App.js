@@ -11,7 +11,7 @@ class App extends React.Component {
     numeroComentarios: 0,
     postagens: [
       {
-        idUsuario:1,
+        idUsuario: 1,
         nomeUsuario: "Leonardo",
         fotoUsuario: fotoPerfil,
         postUsuario: "https://i1.wp.com/css-tricks.com/wp-content/uploads/2019/03/circle-of-react-lifecycle.png?ssl=1",
@@ -37,14 +37,14 @@ class App extends React.Component {
     const listaPostagens = this.state.postagens.map((post) => {
 
       return (
-      <div className={'post-container'} key={post.idUsuario}>
-              <div className={'post-header'} >
-                    <img className={'user-photo'} src={post.fotoUsuario} />
-                    <p> {post.nomeUsuario}</p>
-              </div>
-                  <img className={'post-photo'} src={post.postUsuario} />
-                  <Post />
-      </div>
+        <div className={'post-container'} key={post.idUsuario}>
+          <div className={'post-header'} >
+            <img className={'user-photo'} src={post.fotoUsuario} alt={'Foto usuario'} />
+            <p> {post.nomeUsuario}</p>
+          </div>
+          <img className={'post-photo'} src={post.postUsuario} alt={'Imagem da postagem'} />
+          <Post />
+        </div>
 
       )
     })

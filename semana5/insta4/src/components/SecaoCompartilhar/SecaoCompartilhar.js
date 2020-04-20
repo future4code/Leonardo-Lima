@@ -35,7 +35,7 @@ export class SecaoCompartilhar extends Component {
   render() {
     const iconeCompartilhar = this.state.logo.map((icone) => {
       return (
-        <span className={'user-logo'} key={icone.id} onClick={this.aoEnviarCompartilhamento = () =>{ console.log('Post compartilhado no', icone.nome , 'com a mensagem: ' , this.state.valorShare) }}><img src={icone.imagem} /></span>
+        <span className={'user-logo'} key={icone.id} onClick={this.aoEnviarCompartilhamento = () =>{ console.log('Post compartilhado no', icone.nome , 'com a mensagem: ' , this.state.valorShare) }}><img src={icone.imagem} alt={'logo'} /></span>
       )
     })
     return (
