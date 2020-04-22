@@ -9,7 +9,7 @@ const TarefaList = styled.ul`
 
 const Tarefa = styled.li`
   text-align: left;
-  text-decoration: ${({completa}) => (completa ? 'line-through' : 'none')};
+  text-decoration: ${({ completa }) => (completa ? 'line-through' : 'none')};
 `
 
 const InputsContainer = styled.div`
@@ -19,37 +19,45 @@ const InputsContainer = styled.div`
 `
 
 class App extends React.Component {
-    state = {
-      tarefas: [],
-      inputValue: '',
-      filter: ''
-    }
-
-  componentDidUpdate() {
-
-  };
-
-  componentDidMount() {
-
-  };
+  state = {
+    tarefas: [{
+      id: Date.now(),
+      texto: '',
+      completa: false
+    }],
+    inputValue: '',
+    filter: ""
+  }
 
   onChangeInput = (event) => {
-
+    this.setState({ inputValue: event.target.value })
   }
 
   criaTarefa = () => {
+    const novaTarefa = {
+      id: Date.now(),
+      texto: this.state.inputValue,
+      completa: false
+    }
+    const novaListaTarefas = [novaTarefa, ...this.state.tarefas]
+
+    this.setState({ novaTarefa: novaListaTarefas })
+    console.log(novaTarefa)
 
   }
 
   selectTarefa = (id) => {
 
+    id = this.tarefas.id
+
   }
 
   onChangeFilter = (event) => {
-
+    this.setState({filtro: event.target.value})
   }
 
   render() {
+
     const listaFiltrada = this.state.tarefas
       .filter(tarefa => {
         switch (this.state.filter) {
@@ -66,10 +74,12 @@ class App extends React.Component {
       <div className="App">
         <h1>Lista de tarefas</h1>
         <InputsContainer>
-          <input value={this.state.inputValue} onChange={this.onChangeInput}/>
+          <input
+            value={this.state.inputValue}
+            onChange={this.onChangeInput} />
           <button onClick={this.criaTarefa}>Adicionar</button>
         </InputsContainer>
-        <br/>
+        <br />
 
         <InputsContainer>
           <label>Filtro</label>
