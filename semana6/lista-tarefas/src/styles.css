@@ -1,7 +1,33 @@
+* {
+  margin: 0;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 500px;
+  margin: auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+select {
+  width: 120px;
+  height: 30px;
+  text-transform: uppercase;
+}
+
+span {
+  margin-right: 10px;
+  font-weight: bolder;
+}
+
+h5 {
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 80px;
 }
