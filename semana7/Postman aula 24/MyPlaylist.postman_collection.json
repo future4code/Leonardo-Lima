@@ -60,7 +60,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=string&=One Piece",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=string&=Dragon Ball Z",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -83,8 +83,8 @@
 							"value": "string"
 						},
 						{
-							"key": null,
-							"value": "One Piece"
+							"key": "",
+							"value": "Dragon Ball Z"
 						}
 					]
 				},
@@ -120,7 +120,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": ""
+							"value": "f382dc4d-7ba1-410c-9847-34c538cd6266"
 						}
 					]
 				}
@@ -140,7 +140,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"One Piece\"\r\n    ",
+					"raw": "{\r\n    \"name\": \"Naruto\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -177,7 +177,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Já que me ensinou a beber\", \r\n    \"artist\": \"Barão da Pisadinha\",\r\n    \"url\": \"https://www.youtube.com/watch?v=y_HY1jZlUP0\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Gai vs Madara\", \r\n    \"artist\": \"Naruto\",\r\n    \"url\": \"https://www.youtube.com/watch?v=4LIwzFhENxg\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -201,7 +201,7 @@
 					"variable": [
 						{
 							"key": "playlistId",
-							"value": "6e65a2b0-a5e3-4c32-97fc-f967357ff7b4"
+							"value": "f382dc4d-7ba1-410c-9847-34c538cd6266"
 						}
 					]
 				},
@@ -216,7 +216,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "leonardo-limajulian",
+						"value": "leonardo-lima-julian",
 						"type": "text"
 					}
 				],
@@ -247,9 +247,38 @@
 			"name": "Remove Track From Playlist",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "leonardo-lima-julian",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": ""
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": ""
+						},
+						{
+							"key": "trackId",
+							"value": ""
+						}
+					]
 				}
 			},
 			"response": []
