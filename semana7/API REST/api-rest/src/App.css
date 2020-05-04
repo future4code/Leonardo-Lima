@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  color: white;
+}
+
+input {
+  margin: 5px;
+  border-style: none;
+  height: 25px;
+  width: 300px;
+  background-color: #fff;
+  color: #666;
+}
+
+.CadastroDiv {
+  background-color: rgb(62, 123, 236);
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 5px;
+}
+
+.App button {
+  border-style: none;
+  background-color: #00ff;
+  color: white;
+  height: 30px;
+  width: 100%;
+  margin-top: 10px;
+  outline: 0 0 0 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.CadastroDiv button {
+  border-style: none;
+  background-color: #00ff;
+  color: white;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  outline: 0 0 0 0;
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.UsuariosLista {
+  background-color: rgb(62, 123, 236);
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.UsuariosLista button {
+  border-style: none;
+  background-color: #00ff;
+  color: white;
+  outline: 0 0 0;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Anton" sans-serif;
+  color: white;
+}
+
+.ListaExibida {
+  background-color: rgb(62, 123, 236);
+}
+
+.DivButton {
+  width: 80px;
+  height: 50px;
+  margin-bottom: 10px;
+}
