@@ -2,37 +2,127 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* estilo css do Header  */
+
+.Header {
+  width: 100%;
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "Logo Text BtnLogin";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Logo {
+  text-align: left;
+  grid-area: Logo;
+}
+
+.Logo img {
+  width: 250px;
+  height: 14vh;
+}
+
+.Text {
+  grid-area: Text;
+  font-size: 19px;
+  font-family: "Courier New";
+  margin-top: 15px;
+  animation-duration: 8s;
+  animation-name: cor_fonte;
+  animation-iteration-count: infinite;
+  color: #ff5f00);
+}
+
+@keyframes cor_fonte {
+  0% {
+    color: #ff5f00)
+  }
+  25% {
+    color: #f0f
+  }
+  50% {
+    color: #06f
+  }
+  75% {
+    color: rgb(197, 32, 10)
+  }
+  100% {
+    color: #ff5f00
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.BtnLogin {
+  grid-area: BtnLogin;
+}
+
+.BtnLogin button {
+  border-style: none;
+  width: 100px;
+  height: 50px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ff5f00;
   color: white;
+  font-size: 22px;
+  font-family: "Courier New";
 }
 
-.App-link {
-  color: #61dafb;
+/* fim do css do header  */
+
+.Container {
+  background-image: url('./Imagens/bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  height: 88vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Content-site {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: ". AreaForm .";
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-column-gap: 100px;
+}
+
+.AreaForm {
+  margin-left: 100px;
+  grid-area: AreaForm;
+  border-radius: 10px;
+  height: 400px;
+  color: #FFF;
+  background-color: rgb(0, 0, 0);
+  opacity: 90%;
+}
+
+.Footer-site {
+  bottom: 0;
+  position: fixed;
+  color: white;
+  width: 100%;
+}
+
+.Form-content {
+  padding-top: 30px;
+  font-family: "Courier New";
+}
+
+.Form-content button {
+  border-style: none;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px 0;
+  background-color: #ff5f00;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Courier New";
 }
