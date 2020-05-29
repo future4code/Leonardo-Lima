@@ -5,8 +5,9 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 //Importando as paginas
 
 import HomePage from '../HomePage'
-import Login from "../Login"
+import Login from "../LoginPage"
 import PainelPage from "../PainelPage"
+import TripPage from "../TripPage";
 
 
 
@@ -20,6 +21,9 @@ const Router = () => {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/viagens">
+          <TripPage />
         </Route>
         <Route exact path="/painel">
           <PainelPage />

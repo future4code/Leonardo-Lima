@@ -117,7 +117,7 @@
 .Form-content button {
   border-style: none;
   margin-top: 50px;
-  width: 150px;
+  width: 400px;
   height: 50px;
   border-radius: 10px 0;
   background-color: #ff5f00;
@@ -125,4 +125,11 @@
   font-size: 24px;
   text-transform: uppercase;
   font-family: "Courier New";
+}
+
+.TripStyle {  
+  width: 500px;
+  padding-bottom: 15px;  
+  background-color: #999;
+  margin: auto;
 }
