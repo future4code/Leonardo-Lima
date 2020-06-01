@@ -21,14 +21,19 @@ function GetTrips() {
   }, [])
 
   return (
-    <div>
+    <div className="Trip-Container">
       {trips.map(t => {
         return (
           <div className="TripStyle">
-            <p><span>PLaneta:</span>{t.planet}</p>
+            <p className="NameTitulo">Planeta</p>
+            <p>{t.planet}</p>
+            <p className="NameTitulo">Viagem</p>
             <p>{t.name}</p>
+            <p className="NameTitulo">Descrição</p>
             <p>{t.description}</p>
-            <p>{t.durationInDays}</p>
+            <p className="NameTitulo">Duração da Viagem</p>
+            <p>{t.durationInDays} dias</p>
+            <p className="NameTitulo">Data do Lançamento</p>
             <p>{t.date}</p>
             <button>CANDIDATAR-SE</button>
           </div>

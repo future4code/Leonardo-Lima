@@ -1,7 +1,7 @@
 import React from 'react';
 import Menus from '../Menus';
-import TripPage from '../TripPage';
 import { useHistory } from 'react-router-dom';
+import FooterPage from '../Footer';
 
 
 
@@ -28,9 +28,7 @@ return  (
                                 <button onClick={goToTrip}>ver viagens espaciais</button>                                
                             </div>
                           </div>
-                                <div className="Footer-site">
-                                  © copyright - Todos os direitos reservados
-                                </div>
+                                <FooterPage />
                     </div>
 
 

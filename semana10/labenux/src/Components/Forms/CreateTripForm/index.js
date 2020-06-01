@@ -11,9 +11,17 @@ function CreatTripForm (props) {
     const [planet,setPlanet] = useState("")
     const [durationInDays,setDurationInDays] = useState("")
     
+    const body {
+        name ="" ,
+        description = "",
+        date = "",
+        planet = "",
+        durationInDays = ""
+
+    }
 
 axios
-.post(`${baseUrl}/trips`)
+.post(`${baseUrl}/trips`, body)
 
 
 

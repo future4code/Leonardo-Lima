@@ -2,6 +2,7 @@ import React from 'react';
 //Importando as paginas
 import  GetTrips  from '../Requests/GetTrips';
 import Menus from '../Menus';
+import FooterPage from '../Footer';
 
 
 
@@ -10,9 +11,7 @@ function TripPage() {
     <div className="App">
     <Menus />    
     <GetTrips />
-    <div className="Footer-site">
-                                  © copyright - Todos os direitos reservados
-    </div>
+    <FooterPage /> 
     </div>
     
   );
