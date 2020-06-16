@@ -1,0 +1,136 @@
+body {
+  background-color: #999;
+}
+
+.Container {
+  padding-top: 50px;
+  background-color: #999;
+}
+
+.App {
+  background-color: #FFF;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Voltar Logo Icon";
+  border-bottom: 1px solid black;
+  border-radius: 10px 10px 0 0;
+  height: 50px;
+}
+
+.Voltar {
+  grid-area: Voltar;
+  width: 20px;
+  padding-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Icon {
+  grid-area: Icon;
+  padding-top: 10px;
+  cursor: pointer;
+  width: 20px;
+  justify-self: right;
+  margin-right: 20px;
+}
+
+.Logo {
+  grid-area: Logo;
+  height: auto;
+  padding-top: 5px;
+}
+
+.Logo img {
+  width: 150px;
+  height: 40px;
+}
+
+.Escolhas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "NoMatch Match";
+  padding-bottom: 10px;
+}
+
+.NoMatch {
+  float: right;
+  grid-area: NoMatch;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  justify-self: center;
+}
+
+.Match {
+  border-radius: 50%;
+  width: 60px;
+  grid-area: Match;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #999;
+}
+
+.Footer button {
+  float: right;
+  width: 250px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.Content {
+  padding-top: 30px;
+  height: auto;
+}
+
+.Content img {
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  max-width: 300px;
+  max-height: 350px;
+  min-width: 300px;
+  min-height: 350px;
+}
+
+.ListaMatches {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  min-height: 50px;
+}
+
+.ListaMatches:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.ListaImagem img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.ListaNome {
+  padding-left: 5px;
+  font-size: 1.1em;
+  justify-self: center;
+}
