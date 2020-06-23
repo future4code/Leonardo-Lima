@@ -1,0 +1,16 @@
+{
+  "name": "node-package",
+  "version": "1.0.0",
+  "description": "exercicios-tarde",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.js"
+  },
+  "author": "'Leonardo Lima'",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.13",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
