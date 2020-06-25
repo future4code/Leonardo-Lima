@@ -1,0 +1,17 @@
+{
+  "name": "aula47",
+  "version": "1.0.0",
+  "description": "Exercicios",
+  "main": "src/index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "es2015": "^0.0.0",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leonardo Lima",
+  "license": "ISC"
+}
