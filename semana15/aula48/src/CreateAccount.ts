@@ -8,6 +8,8 @@ export class UserAccount {
     private balance :number = 0
     private transactions : Transactions[] = []
 
+
+    
     constructor(
         cpf :string,
         name:string,
@@ -17,11 +19,12 @@ export class UserAccount {
         
         this.cpf = cpf
         this.name = name
-        this.age = age
-
+        this.age = age            
 
     }
 
+ 
+   
 //Getters  - serve para permitir que os dados sejam consultados externamente quando
 // a chave definida é privada
 
