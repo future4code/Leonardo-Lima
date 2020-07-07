@@ -4,7 +4,8 @@
   "description": "exercicios-tarde",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./src/index.js"
+    "criarTarefa": "tsc && node build/index.js",
+    "gitCommit" : "git commit -m  'terminei exercicio' "
   },
   "author": "'Leonardo Lima'",
   "license": "ISC",

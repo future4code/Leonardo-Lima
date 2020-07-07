@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Astrodev",
+    "birthDate": "14/09/1990",
+    "cpf": "192.168.297-25",
+    "balance": 0,
+    "extract": [
+      {
+        "description": "Mercado",
+        "value": 5,
+        "date": "26/06/2020"
+      }
+    ]
+  },  
+  {
+    "name": "Zyra",
+    "birthDate": "18/09/2000",
+    "cpf": "222.222.222-17",
+    "balance": 50,
+    "extract": []
+  }
+]
