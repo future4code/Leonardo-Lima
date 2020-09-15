@@ -1,0 +1,24 @@
+Usei os comandos 
+
+git clone 
+
+depois usei um cd nome_da_pasta
+
+depois npm install  para ele instalar as dependências
+
+npm run start para verificar se tudo estava ok .
+
+
+npm run build 
+
+
+cd build/
+
+
+sudo apt update
+sudo apt install python
+
+sudo python -mSimpleHTTPServer 80
+
+
+e por mim vi que a aplicação está online .

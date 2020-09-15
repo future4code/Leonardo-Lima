@@ -76,7 +76,7 @@ export class User {
         }
     }
 
-    static toUserModel(user: any) : user {
+    static toUserModel(user: any) : User {
         return new User(user.id, user.name, user.email, user.password, user.stringToUserRole(user.role))
     }
 
