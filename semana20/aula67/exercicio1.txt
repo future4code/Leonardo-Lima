@@ -1,0 +1,7 @@
+A - Consegui entender a função .
+
+B - Missing Input
+
+C - User is correct
+
+D - 
